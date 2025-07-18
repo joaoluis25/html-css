@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de simplificação de caixa</title>
+    <style>
+        /*  body{
+            background-color: black;
+        }
+        h1{
+            text-align: center;
+            color: red;
+            background-color: aliceblue;
+            height: 300px;
+            width: 300px;
+            border: 15px;
+            border-color: chartreuse;
+            border-style: solid;
+
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            margin-left: 400px;
+
+            outline-width: 10px; ;
+            outline-style: dashed;
+            outline-color: chocolate;
+     */ 
+     body{
+        background-color: black;
+     }
+
+     h1{ /*BOX-LEVEL*/
+        color: aliceblue;
+        width: 300px;
+        height: 300px;
+
+        border: 15px solid red;
+
+        padding: 15px 15px 15px 15px;
+
+        margin: 20px 20px 20px 400px;
+
+        outline: 10px dashed rgb(170, 238, 35);
+     }
+     p{
+        color: aliceblue;
+        font-size: 20px;
+     }
+
+     a{ /*INLINE-LEVEL*/
+        color: brown;
+
+        display: inline-block;/*Quando c coloca o display se muda a caracteristica normal de um elemento!*/
+
+        border: 10px solid orange;
+
+        padding: 10px 10px 10px 10px;
+     }
+
+    </style>
+</head>
+<body>
+    <h1>Vamos simplificar o codigo da caixa!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<a href="#">links para simplifição de caixa!</a> Ducimus tenetur error quas corporis maiores consequatur, veritatis illum deserunt laboriosam ad nesciunt ipsa quisquam repellat voluptas, saepe sequi? Quibusdam, odio quod!</p>
+</body>
+</html>

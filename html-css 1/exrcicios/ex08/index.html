@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas em HTML</title>
+</head>
+<body>
+    <h1>Lista Ordenada</h1>
+    <p>A tag ol possui um parâmetro type, onde configuramos o tipo de marcador da lista 
+        atual. As opções de valores para esse parâmetro são: <br> 
+        ‣ 1 - Valor padrão. Cria listas numeradas. Ex: 1, 2, 3, 4, … <br>
+        ‣ A - Cria listas alfabéticas em maiúsculas. Ex: A, B, C, D, … <br>
+        ‣ a - Cria listas alfabéticas em minúsculas. Ex: a, b, c, d, … <br>
+        ‣ I - Cria listas com algarismos romanos em maiúsculas. Ex: I, II, III, IV, … <br>
+        ‣ i - Cria listas com algarismos romanos em minúsculas. Ex: i, ii, iii, iv, … <br>
+        Você também pode indicar o início da contagem usando o parâmetro start. 
+        Por exemplo, a tag &lt;ol  type=“I” start = “5”&gt;  vai gerar itens numerados como V, 
+        VI, VII, VIII, IX, …</p>
+    <ol type="I" start="1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+    <hr>
+    <h1>Lista sem Ordem</h1>
+    <p>O marcador padrão é a bolinha preta totalmente preenchida (circle), mas existe a 
+       opção de configurar a propriedade type da tag &lt;ul&gt; com os seguintes valores: <br>
+        ‣ disc - padrão. Uma bola preta totalmente pintada <br>
+        ‣ circle - Uma bola com uma borda preta e sem preenchimento <br>
+        ‣ square - Um pequeno quadrado preto totalmente pintado</p>
+    <ul type="disc">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li> 
+    </ul>
+    <hr>
+    <h1>Listas Mistas</h1>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <ol type="a">
+            <li>Item 1</li>
+            <li>Item 3</li>
+            <li>Item 5</li>
+        </ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+    <hr>
+    <h1>Lista de Definições</h1>
+    <p>Toda lista de definições está dentro de uma tag &lt;dl&gt; &lt;/dl&gt; (definition list) Cada termo é um &lt;dt&gt; (definition term) e cada descrição é um &lt;dd&gt; (definition description). <br>Assim como os itens da lista, essas duas últimas tags possuem fechamento opcional, segundo a referência oficial da HTML5. </p>
+    <dl>
+        <dt>HTML:</dt>
+        <dd>Linguagem de marcação utilizada para criar o conteudo de sites.</dd>
+        <br>
+        <dt>CSS:</dt>
+        <dd>Linguagem de marcação para especificação de estilos em sites.</dd>
+        <br>
+        <dt>JAVASCRIPT:</dt>
+        <dd>Linguagem de programação para criar interatividades em sites.</dd>
+    </dl>
+</body>
+</html>

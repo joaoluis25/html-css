@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Imagem de Celular</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px  )" srcset="imagens/i3.png" type="image/png">
+        <!--sempre o comando da menor imagem deve ser acima da maior, ou seja, deve ser em ordem crescente, a base sempre sera a imagem padrão e acima dela sera os <source>-->
+        <source media="(max-width: 1000px)" srcset="imagens/i2.png" type="image/png">
+        <img src="imagens/Sem título.png" alt="imagem de celular">
+    </picture>
+</body>
+</html>

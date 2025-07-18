@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+body {
+    background-image: linear-gradient(to right,#027373, #A9D9D0, #F2E7DC,#0D0D0D );
+}
+main{
+    background-color: aliceblue;
+    width: 750px;/*largura*/
+    padding: 15px;/*espaço no fim de cada linha*/
+    margin: auto; /*centraliza a imagem independento do tamanho da tela*/
+    border-radius: 10px;/*arredonda as pontas do quadrado*/
+    box-shadow: 10px 10px 10px black; /*primeira paremetro é quanto a sombra vai andar para o lado, o segundo parametro é quanto a sombra vai andar para baixo, e o terceiro parametro é quanto essa sombra vai espalhar.*/
+}
+h1{
+    color: #027373;
+    text-shadow: 1px 1px 2px gold ;/* primeiro parametro um pixel de deslocamento lateral, segund parametro um pixel deslocamento para baixo, terceiro parametro um pixel de  */
+    text-align: center;
+}
+h2{
+    color: #038C7F;
+}
+p{
+    color: #3D3D3D;
+    text-align: justify;/*alinhamento de texto*/
+}
+   

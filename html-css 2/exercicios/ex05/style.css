@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(235, 146, 146);
+}
+
+h1{
+    color: rgb(250, 204, 147);
+}
+
+#principal{
+     color: blueviolet;
+     background-color: aliceblue;
+     text-align: center;
+}
+
+/*
+   Tudo que em HTML for id em CSS é #. [só pode um elemento]
+   Tudo que em HTML for class em CSS é .(ponto). [pode mais de um elemento]
+   Dentro de um mesmo elemento so pode se ter somente(mesmo que funcione colocar mais que em 1 elementoa ainda é errado) um id.
+   Não de nome as suas class pela forma, mas sim pela funcionalidade.
+   Você consegue colocar id e class no mesmo elemento porem o id se sobrepõe sobre o class, ou seja as configurações do id seram mais importantes do que a do class.
+*/
+.basico{
+     color: rgb(100, 100, 247);
+}
+
+.intermediario{
+     color: rgb(50, 50, 253);
+}
+
+.avançado{
+     color: blue;
+     font-style: italic;
+}
+
+.destaque{
+    background-color: rgba(127, 255, 212, 0.514);
+    font-style: italic;
+}
+
+h2{
+    color:beige ;
+}

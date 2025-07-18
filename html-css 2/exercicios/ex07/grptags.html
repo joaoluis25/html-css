@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+         /*Tanto header[div para cabeçalho], section, article, aside, nav, main[div para corpo do texto] e footer[div para rodapé] são divs semanticas.*/ /*cabeçalho*/
+        body{
+            background-color: rgb(99, 97, 97);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        a{
+            color: blueviolet;
+        }
+        h1{
+            color: black;
+            font-weight: bolder;
+            font-size: 35px;
+        }
+        p{
+            color: black;
+        }
+        h2{
+            color: black;
+        }
+        h3{
+            color: black;
+        }
+        header{
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 30px; /*\pode se configuara cada borda[as 4] individual mente, ou pode se colocar somnte 1 parametro univversal. Caso vc coloque 2 parametros a ponta superior fica com o mesmo parametro que a sua diagonal inferior.*/
+        }
+        nav{
+            background-color: rgb(180, 175, 175);
+            padding: 3px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.425);
+
+        }
+        nav > a{
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 25px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: burlywood;
+            padding: 10px;
+            margin: 10px;
+        }
+        article{
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+        .unico{
+            font-weight: 100;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 30px;
+        }
+        .especial{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+        }
+        aside{
+            background-color: black;
+            text-align: center;
+            padding: 5px;
+        }
+        aside > p {
+            color: aliceblue;
+            margin: 0px;
+        }
+        footer{
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+        }
+        footer > p{
+            color: aliceblue;
+        }
+        a > p{
+            display: none;
+        }
+        a:hover > p{
+            background-color: black;
+            display: inline;
+            width: 200px;
+            padding: 7px;
+            color: aliceblue;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        #bola{
+            background-color: aliceblue;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border-radius: 50%;
+            justify-self: center;
+        }
+    </style> 
+</head>
+<body> 
+    <header> 
+          <h1>Meu site</h1>
+          <nav>
+               <a href="#">Link  <p>Seu</p></a>
+               <a href="#">  Link <p>Pau</p></a>
+               <a href="#">  Link <p>NA</p></a>
+               <a href="#">  Link <p>MINHA</p></a>
+               <a href="#">  Link <p>MÂO!</p></a>
+          </nav>
+    </header>
+    <main> 
+         <section id="assuntos">
+            <h3 class="unico">Esportes e Tecnologia</h3>
+         </section>
+         <section id="noticias">
+             <article>
+                <h2 class="especial">Noticias do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, sit? Fuga autem quisquam id nam? Animi et sit temporibus quasi inventore ratione excepturi enim corrupti? Voluptas nesciunt nobis animi laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, esse mollitia ex cumque commodi facilis eaque ipsam doloribus laborum laudantium suscipit expedita obcaecati non? Libero asperiores eum voluptas iste ullam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. In molestias sit quisquam, cum iusto itaque tempore reiciendis esse unde dolores sint? Eum doloribus odit similique, iusto minus dolorem eius reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, enim officia, repudiandae voluptatem similique quia dolorem, consectetur ea id voluptatum dolorum ut iste suscipit fuga ad. Amet natus impedit consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iusto quisquam atque perferendis, error ut similique numquam est non recusandae voluptate ipsum repellendus quaerat eveniet praesentium voluptatibus cumque voluptatem adipisci.</p>
+                <aside>
+                    <p>Artigo escrito por João de Carvalho!</p>
+                </aside>
+             </article>
+         </section>
+    </main>
+    <footer> 
+        <p>Desenvolvido pelo Curso em Video!</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        SELETORES PERSONALIZADOS
+            #  = ID
+            .  = CLASS
+            :  = PSEUDO-CLASS
+            ::  = PSEUDO-ELEMENT
+            >  = CHILDREN(FILHO)
+        */
+        body{
+             font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        a{
+             color: blueviolet;
+             text-decoration: none;
+             font-weight: bold;
+        }
+
+        a:visited{ /*cor que muda quando o link ja foi visitado pela pessoa.*/
+             color: violet;
+        }
+
+        a:hover{ /*cor muda quando a pessoa passa o mose por cima do link.*/
+            color: rgb(151, 151, 9);
+            text-decoration: underline;
+        }
+
+        a:active{ /*cor muda quando a pessoa clica no link e segura.*/
+            color: blue;
+        }
+        a::after{ /*dentro dessa subclasse de elementos a o after que e ao final do link e o before que é no inicio do link.*/
+            content: " [link]";
+            color: deeppink;
+            font-weight: normal;
+        }
+
+        .especial{ /*essa class mostra e da destaque a um link em especial no caso a musica.*/
+                background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a target="_self" href="https://www.youtube.com/watch?v=wt2cdF99dKQ"> BVB vs Monterrey</a></li>
+        <li><a target="_self" href="https://www.youtube.com/watch?v=jhlRp5APXzk&pp=0gcJCcMJAYcqIYzv">Melhor contratação do mundial</a></li>
+        <li><a target="_self" class="especial" href="https://www.youtube.com/watch?v=DURGfr1oh30&list=RDDURGfr1oh30&start_radio=1">Vitor e Leo:Borboletas</a></li>
+    </ul>
+</body>
+</html>
