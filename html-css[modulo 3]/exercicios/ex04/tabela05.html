@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        h1{
+            text-align: center;
+            color: aliceblue;
+        }
+        caption{
+            color: aliceblue;
+            text-align: center;
+            font-size: 20px;
+            padding: 5px;
+            font-style: italic;
+        }
+
+        table{
+            width: 400px;
+            margin: 0px auto;
+            border-collapse: collapse;
+        }
+
+        tr,td,th{
+            border: 2px solid white;
+            color: aliceblue;
+            padding: 5px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        col.cnome{
+            background-color: brown;
+        }
+
+        col.cgrupo{ /*Criando configurações de tabelas em grupo.*/
+            background-color: blueviolet;
+        }
+
+        col.cprof{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela 05</h1>
+
+    <table>
+        <caption>
+            Cadastro de Pessoas
+        </caption>
+        <colgroup> <!--Destacando colunas inteiras!-->
+            <col class="cnome">
+            <col class="cgrupo" span="2"> <!--SPAN leva a configuração para as colunas subsequentes a da configuração existente, ele n pula colunas.-->
+            <col class="cprof">
+        </colgroup> 
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Julia</td>
+            <td>F</td>
+            <td>23</td>
+            <td>Medico</td>
+        </tr>
+        <tr>
+            <td>Ana Clara</td>
+            <td>F</td>
+            <td>35</td>
+            <td>Psicologa</td>
+        </tr>
+        <tr>
+            <td>Ana Cecilia</td>
+            <td>F</td>
+            <td>45</td>
+            <td>Veterinaria</td>
+        </tr>
+        <tr>
+            <td>João Alberto</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Dançarino</td>
+        </tr>
+        <tr>
+            <td>João Luís </td>
+            <td>M</td>
+            <td>19</td>
+            <td>Programador & CEO</td>
+        </tr>
+        <tr>
+            <td>João Felix </td>
+            <td>M</td>
+            <td>15</td>
+            <td>Escritor</td>
+        </tr>
+        <tr>
+            <td>João Lucas</td>
+            <td>M</td>
+            <td>55</td>
+            <td>Advogado</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
