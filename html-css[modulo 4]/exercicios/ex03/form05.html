@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Teste de Formularios</h1>
+    <form action="cadastro.php" autocomplete="on" method="get">
+        
+        <p>
+             <label for="name">Nome:</label>
+             <input type="text" name="name" id="iname" autocomplete="username" required
+             minlength="4">
+        </p>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" value="M"> <label for="imasc">Masculino</label>
+            <input type="radio" name="sexo" id="ifem" value="F"> <label for="ifem"> Feminino</label>
+            <!--Quando se usa RADIO tem um problema de que se você marca um valor errado vc não consegue desmarca-lo para resolver esse problema deve-se usar o mesmo name para todos os valores{input}.-->
+        </fieldset>
+        
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label> <br>
+            <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label> <br>
+            <input type="checkbox" name="voley" id="ivoley"> <label for="ivoley">Voleyball</label> <br>
+            <input type="checkbox" name="handi" id="ihandi"> <label for="ihandi">Handeball</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
