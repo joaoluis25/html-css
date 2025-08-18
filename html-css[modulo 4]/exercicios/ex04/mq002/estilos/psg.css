@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/*Configurações de tela deitada.*/
+
+body{
+    background: url(../img/cev-landscape.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
