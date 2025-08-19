@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/cll.css">
+    <link rel="stylesheet" href="estilos/mq.css">
     <title>site</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
 
     <header>
         <h1>Meu Site</h1>
@@ -40,6 +41,14 @@
         </article>
     </main>
     <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768) {
+                mn.style.display = 'block'
+            } else {
+                mn.style.display = 'none'
+            }
+        }
+
         function clickMenu(){
             if (mn.style.display == 'block') {
                 mn.style.display = 'none'
