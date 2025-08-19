@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+/*Não precisa fazer medias para celulares visto que elas ja foram criadas inicialmente quanto estavamos a fazer o site base, agora são somente as midias maiores.*/
+
+/*Todas as demais medias*/
+
+/*Typical Device Breakpoints
+
+Pequenas Telas= até 600px
+Celular= de 600px até 768px
+Tablet= 768px até 992px
+Desktop= 992px até 1200px
+Grandes Telas= acima de 1200px
+
+*/
+
+@media print { /*IMPRESSSÃO*/
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url(../imgs/back-print.jpg);
+    }
+    main{
+        border: 2px solid black;
+    }
+    main::after{
+        content: "Esse projeto foi feito por João Luís!";
+        text-decoration: none;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+        
+    #tablet{
+    display: none;
+    }
+    #tv{
+        display: none;
+    }
+    #cell{
+        display: none;
+    }
+    #pc{
+        display: none;
+    }
+    #print{
+        display: block;
+        margin: auto;
+    }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 992px) { /*TABLET*/
+    body{
+        background-image: url(../imgs/back-tablet.jpg);
+    }
+
+    #tablet{
+        display: block;
+        margin: auto;
+    }
+    #tv{
+        display: none;
+    }
+    #cell{
+        display: none;
+    }
+    #pc{
+        display: none;
+    }
+    #print{
+        display: none;
+    }
+    
+}
+
+@media  screen and (min-width: 992px) and (max-width: 1200px) { /*DESKTOP*/      
+    body{
+        background-image: url(../imgs/back-pc.jpg);
+    }
+
+    #tablet{
+       display: none;
+    }
+    #tv{
+        display: none;
+    }
+    #cell{
+        display: none;
+    }
+    #pc{
+        display: block;
+        margin: auto;
+    }
+    #print{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 1200px){ /*TELAS GRANDES*/      
+    body{
+        background-image: url(../imgs/back-tv.jpg);
+    }
+
+    main{
+        width: 700px;
+    }
+
+    #tablet{
+        display: none;
+    }
+    #tv{
+        display: block;
+        margin: auto;
+    }
+    #cell{
+        display: none;
+    }
+    #pc{
+        display: none;
+    }
+    #print{
+        display: none;
+    }
+
+}
