@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font: 1em;
+    background-color: rgba(185, 185, 185, 0.877);
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    background-color: rgb(82, 82, 82);
+    color: aliceblue;
+    padding: 10px;
+}
+
+header h1{
+    border: 1px dotted white;
+}
+
+header nav{
+    border: 1px dotted white;
+}
+
+header nav a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+main{
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.466);
+}
