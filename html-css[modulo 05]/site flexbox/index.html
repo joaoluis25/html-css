@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/tablet.css">
     <link rel="stylesheet" href="estilos/mq.css">
     <title>menu flexbox</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
-           <nav class="container">
-               <a href="#" class="item">Opção 1</a>
-               <a href="#" class="item">Opção 2</a>
-               <a href="#" class="item">Opção 3</a>
-               <a href="#" class="item">Opção 4</a>
-               <a href="#" class="item">Opção 5</a>
-               <a href="#" class="item">Opção 6</a>
-           </nav>
+        <i id="icon" class="material-icons" onclick="clickMenu()">menu</i>
+           <menu id="mn">
+               <nav class="container">
+                   <a href="#" class="item">Opção 1</a>
+                   <a href="#" class="item">Opção 2</a>
+                   <a href="#" class="item">Opção 3</a>
+                   <a href="#" class="item">Opção 4</a>
+                   <a href="#" class="item">Opção 5</a>
+                   <a href="#" class="item">Opção 6</a>
+               </nav>
+           </menu>
     </header>
 
     <main>
@@ -25,6 +29,23 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nisi, beatae voluptates alias rem delectus numquam nostrum sit perferendis? Aspernatur accusamus nam eius cupiditate quisquam totam molestias corporis dolorem et. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores expedita non exercitationem quod, accusamus doloremque neque ad quidem dignissimos officiis excepturi voluptas dolore, architecto perspiciatis voluptatibus consectetur sint possimus esse! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, blanditiis sequi odio dicta ad rerum, consequatur saepe delectus incidunt atque, a qui perspiciatis praesentium? Quisquam quo ullam ipsam dicta sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis recusandae magni laudantium ipsum! Ea alias ipsam eos non ad ex eligendi saepe deleniti iste provident! Sit blanditiis sint consequatur id. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus optio possimus ratione commodi exercitationem libero ut minus, facilis dolorem, eius aliquam voluptate amet voluptatibus perspiciatis, aut repudiandae similique earum. Ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptas ipsa, aut harum nihil aliquam magnam dolor sapiente fugiat quos laborum ducimus laudantium expedita consequuntur cum, atque, enim voluptatem nobis!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam fuga, reprehenderit laudantium corrupti, perspiciatis voluptatibus similique qui sed voluptate adipisci. Iste excepturi, blanditiis at perferendis corporis veritatis quia unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, dolore repellat. Quas ratione eos, suscipit corporis sit ducimus alias? Eos nihil exercitationem omnis facere? Dolor eos voluptatum accusantium odit labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem obcaecati maiores mollitia voluptate, neque dolorem provident voluptates quae quisquam eveniet quaerat ullam recusandae, ipsam adipisci inventore ex error optio. Excepturi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, natus minima! Dolorum dolorem repellendus dolores neque ut sint recusandae rerum officiis id pariatur, ipsam at? Dolores enim facilis commodi delectus.</p>
     </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 600) {
+                mn.style.display = 'flex'
+            } else {
+                mn.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if (mn.style.display == 'block') {
+                mn.style.display = 'none'
+            } else {
+                mn.style.display = 'block'
+            }
+        }
+    </script>
     
 </body>
 </html>

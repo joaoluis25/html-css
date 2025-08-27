@@ -13,5 +13,17 @@
     header nav a{
         width: 90vw;
     }
-    
+
+    #icon{
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (min-width: 600px){
+    #icon{ display: none;}
+    #mn{ 
+        display: block;
+        
+    }
 }
