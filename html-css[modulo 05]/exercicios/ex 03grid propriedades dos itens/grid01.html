@@ -8,33 +8,49 @@
         .container{
             border: 2px solid blue;
             display: grid;
-            grid-template-columns: repeat(3, auto);
+            grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, 100px);
-            place-content: normal normal;
-            place-items: normal normal;
             gap: 10px;
+        }
+
+        .caixa1{
+            border: 3px solid darkred;
+            text-align: center;
+            padding: 5px;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start:1 ;
+            grid-column-end: 3;
+        }
+
+        .caixa2{
+            border: 3px solid darkgoldenrod;
+            text-align: center;
+            padding: 5px;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 5;
 
         }
 
-        .item{
-            border: 3px solid darkred;
+        .caixa3{
+            border: 3px solid darkgreen;
             padding: 5px;
+            text-align: center;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: -1;
         }
 
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-        <div class="item">H</div>
-        <div class="item">I</div>
-    </div>
+        <div class="caixa1">Caixa 1</div>
+        <div class="caixa2">Caixa 2</div>
+        <div class="caixa3">Caixa 3</div>
     
 </body>
 </html>
