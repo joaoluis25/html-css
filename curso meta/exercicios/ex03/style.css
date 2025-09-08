@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.box{
+    display: grid;
+    background-color: blue;
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+    border: 3px solid black;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box:hover{
+    background-color: red;
+    opacity: 50%;
+    transition: 1.5s;
+    transform: rotateZ(60deg);
+}
+
+.texto{
+    opacity: 0%;
+}
+
+div.box > p.texto:hover{
+    opacity: 80%;
+    color: white;
+}
+
