@@ -7,6 +7,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+body{
+    overflow-x: hidden; /*esconde a barra de rolagem*/
+}
+
 header{
     background-color: black;
     width: 100vw;
@@ -47,4 +52,50 @@ nav#menu ul li a {
 nav#menu ul li a:hover{
     background-color: white;
     color: black;
+    border-radius: 5px;
+}
+
+main h1{
+    padding: 5px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    margin: 7px;
+}
+
+main div#q1{
+    background-color: lightgray;
+    height: auto;
+    width: 98vw;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div section h2{
+    margin: 5px;
+}
+
+main div section p{
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+main > div > section > p > a{
+    text-decoration: none;
+    color: black;
+}
+
+main > div > section > p > a:hover{
+    text-decoration: underline;
+}
+
+.img1{
+    height: 350px;
+    width: 350px;
+    object-fit: contain;
 }
