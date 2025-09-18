@@ -25,6 +25,36 @@ header h1{
     font-size: 1.5em;
 }
 
+main{
+    background-color: gray;
+}
+
+main h3{
+    text-align: center;
+    padding: 5px;
+}
+
+div#videos{
+    background-color: lightgray;
+    max-width: 1200px;
+    min-height: 500px;
+    margin: auto;
+}
+
+main div#videos button{
+    padding: 20px;
+    margin: 15px;
+    background-color: black;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+
 footer{
     background-color: black;
     color: white;
