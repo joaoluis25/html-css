@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+@media screen and (min-width:352px) and (max-width:1200px){
+    main div#videos button{
+        margin: 20px;
+    }
+
+}

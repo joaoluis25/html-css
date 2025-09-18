@@ -29,9 +29,9 @@ main{
     background-color: gray;
 }
 
-main h3{
-    text-align: center;
-    padding: 5px;
+main h3.especial{
+    text-align: center; 
+    padding: 10px;
 }
 
 div#videos{
@@ -45,14 +45,31 @@ main div#videos button{
     padding: 20px;
     margin: 15px;
     background-color: black;
-}
-
-button a{
     color: white;
-    text-decoration: none;
-    font-weight: bolder;
 }
 
+main div#videos button:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+ section.video{
+    margin: 5px auto 20px auto;    
+    padding-bottom: 54.8%;
+
+    position: relative;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+section.video > iframe{
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    width: 85%;
+    height: 80%;
+}
 
 
 footer{
