@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Peralta&family=Sriracha&display=swap');
 
 *{
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
 
@@ -21,6 +21,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 15px;
 }
 
 .logo-titulo{
@@ -28,6 +29,7 @@ header{
     align-items: center;
     gap: 5px;
 }
+
 
 header h1{
     font-family: 'Peralta';
@@ -38,7 +40,7 @@ header h1{
 nav#menu ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
 }
@@ -46,8 +48,7 @@ nav#menu ul {
 nav#menu ul li a {
   text-decoration: none;
   color: white;
-  padding: 5px;
-  margin-right: 15px;
+  padding: 5px 10px;
 }
 
 nav#menu ul li a:hover{
@@ -76,6 +77,15 @@ main p{
     text-align: justify;
 }
 
+main p a{
+    text-decoration: none;
+    color: black;
+}
+
+main p a:hover{
+    text-decoration: underline;
+}
+
 main div#imagem{
     display: flex;
     justify-content: center;
@@ -99,12 +109,15 @@ main section.tela{
 }
 
  div#video{
-    margin: 0px -12px 30px -12px;
+    margin: 0px auto 30px auto;
     padding: 30px;
     padding-bottom: 54.8%;
 
     position: relative;
-         }
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 div#video > iframe{
     position: absolute;
     top: 5%;
@@ -128,5 +141,6 @@ footer h3 a{
 
 footer h3 a:hover{
     color: red;
+    text-decoration: underline;
 }
 
