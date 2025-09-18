@@ -9,7 +9,9 @@
 }
 
 body{
-    overflow-x: hidden; /*esconde a barra de rolagem*/
+    overflow-x: hidden;
+    line-height: 1.5em;
+    background-color: gray;
 }
 
 header{
@@ -19,7 +21,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
 }
 
 .logo-titulo{
@@ -34,7 +35,6 @@ header h1{
     color: white;
 }
 
-
 nav#menu ul {
   list-style: none;
   display: flex;
@@ -46,7 +46,8 @@ nav#menu ul {
 nav#menu ul li a {
   text-decoration: none;
   color: white;
-  padding: 10px;
+  padding: 5px;
+  margin-right: 15px;
 }
 
 nav#menu ul li a:hover{
@@ -55,47 +56,77 @@ nav#menu ul li a:hover{
     border-radius: 5px;
 }
 
-main h1{
-    padding: 5px;
-    background-color: black;
-    color: aliceblue;
-    text-align: center;
-    margin: 7px;
+main{
+    background-color: lightgray;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.459);
+
 }
 
-main div#q1{
-    background-color: lightgray;
-    height: auto;
-    width: 98vw;
-    margin: 10px;
-    border-radius: 5px;
-    padding: 10px;
+main h2.especial{
+    text-align: center;
+    padding: 5px;
+}
 
+main p{
+    text-align: justify;
+}
+
+main div#imagem{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-main div section h2{
-    margin: 5px;
-}
-
-main div section p{
-    font-size: 1.2em;
-    margin: 5px;
-}
-
-main > div > section > p > a{
-    text-decoration: none;
-    color: black;
-}
-
-main > div > section > p > a:hover{
-    text-decoration: underline;
-}
-
-.img1{
-    height: 350px;
+main img.img{
+    object-fit: cover;
     width: 350px;
-    object-fit: contain;
+    height: 350px;
+    padding: 15px;
+
 }
+
+main section.tela{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+ div#video{
+    margin: 0px -12px 30px -12px;
+    padding: 30px;
+    padding-bottom: 54.8%;
+
+    position: relative;
+         }
+div#video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100vw;
+}
+
+footer h3 a{
+    text-decoration: none;
+    color: white;
+}
+
+footer h3 a:hover{
+    color: red;
+}
+
