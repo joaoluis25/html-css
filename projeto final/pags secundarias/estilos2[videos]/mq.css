@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
 @media screen and (min-width:352px) and (max-width:1200px){
-    main div#videos button{
+    main div#videos a.botao{
         margin: 20px;
+        padding: 15px;
+
     }
 
 }

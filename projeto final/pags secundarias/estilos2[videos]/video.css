@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background-color: lightgray;
+}
 
 header{
     background-color: black;
@@ -41,16 +46,18 @@ div#videos{
     margin: auto;
 }
 
-main div#videos button{
-    padding: 20px;
-    margin: 15px;
+.botao{
     background-color: black;
+    display: inline-block;
+    padding: 15px;
     color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 20px;
 }
 
-main div#videos button:hover{
+.botao:hover{
     background-color: white;
-    border: 2px solid black;
     color: black;
 }
 
